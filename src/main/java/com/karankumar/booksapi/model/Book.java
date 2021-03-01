@@ -58,6 +58,8 @@ public class Book {
     @Column(nullable = false)
     private Language language;
 
+    private String isbn10;
+
     private String isbn13;
 
     @Column(nullable = false)
@@ -68,7 +70,7 @@ public class Book {
     @Column(nullable = false)
     private String blurb;
 
-    private Publisher publishedBy;
+    private PublisherName publisher;
 
     @Column(nullable = false)
     private BookFormat format;
